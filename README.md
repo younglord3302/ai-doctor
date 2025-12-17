@@ -1,73 +1,66 @@
-# React + TypeScript + Vite
+# ✦ AI Medical
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**The Future of Healthcare, Today.**
 
-Currently, two official plugins are available:
+A collaborative and premium "Simulated AI Doctor" application built with React, Vite, and Vanilla CSS. Access advanced diagnostics (simulated) and manage your health from a beautiful, futuristic dashboard.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyounglord3302%2Fai-doctor)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://ai-doctor-gold.vercel.app/)
 
-## React Compiler
+**🔗 Live Demo:** [https://ai-doctor-gold.vercel.app/](https://ai-doctor-gold.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **🤖 AI Doctor Chat**: Interact with a simulated AI for instant symptom checking.
+- **📊 Patient Dashboard**: View health stats, heart rate trends, and activity history.
+- **📅 Appointment Management**: Track upcoming and past medical appointments.
+- **🎨 Premium Design**: Glassmorphism, smooth animations, and a modern dark mode aesthetic.
+- **⚡ Fast Performance**: Built on Vite for lightning-fast reloading and building.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📸 Screenshots
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Landing Page
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+![Landing Page](./screenshots/home.png)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### AI Doctor Chat
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+![Chat Interface](./screenshots/chat.png)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Patient Dashboard
+
+![Dashboard](./screenshots/dashboard.png)
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React, TypeScript, Vite
+- **Styling**: Vanilla CSS (Variables, Flexbox/Grid, Animations)
+- **Routing**: React Router DOM v6
+- **Deployment**: Vercel
+
+## 🚀 Getting Started
+
+1. **Clone the repository**:
+
+    ```bash
+    git clone https://github.com/younglord3302/ai-doctor.git
+    cd ai-doctor
+    ```
+
+2. **Install dependencies**:
+
+    ```bash
+    npm install
+    ```
+
+3. **Run the development server**:
+
+    ```bash
+    npm run dev
+    ```
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
